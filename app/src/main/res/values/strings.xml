@@ -5,4 +5,7 @@
     <string name="reading_surah">Reading Surah</string>
     <string name="splash_screen_al_quran">Splash Screen Al-Quran</string>
     <string name="sahabat_quran">Sahabat Quran</string>
+    <string name="surah">Surah</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="feature_not_available">I\'m sorry, the feature is not available now, However, don\'t worry! We are currently working on making it available soon. Please wait for our update.</string>
 </resources>
