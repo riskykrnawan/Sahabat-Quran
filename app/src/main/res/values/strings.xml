@@ -3,4 +3,6 @@
     <string name="placeholder_search">Search something…</string>
     <string name="al_quran">Al-Quran</string>
     <string name="reading_surah">Reading Surah</string>
+    <string name="splash_screen_al_quran">Splash Screen Al-Quran</string>
+    <string name="sahabat_quran">Sahabat Quran</string>
 </resources>
