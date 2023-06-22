@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -35,7 +36,14 @@ fun SplashScreen(navController: NavHostController, modifier: Modifier = Modifier
 
     Column(
         modifier = modifier
-            .background(MaterialTheme.colorScheme.primary)
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(
+                        MaterialTheme.colorScheme.primary,
+                        MaterialTheme.colorScheme.tertiary,
+                    )
+                )
+            )
             .fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -44,7 +52,7 @@ fun SplashScreen(navController: NavHostController, modifier: Modifier = Modifier
             modifier = modifier
                 .width(100.dp)
                 .height(100.dp),
-            painter = painterResource(id = R.drawable.quran_kareem),
+            painter = painterResource(id = R.drawable.ic_quran_kareem),
             colorFilter = ColorFilter.tint(color = MaterialTheme.colorScheme.onPrimary),
             contentDescription = stringResource(R.string.splash_screen_al_quran),
         )
